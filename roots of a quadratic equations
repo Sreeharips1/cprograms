@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main(){
+    float a,b,c,dsc,root1,root2;
+    printf("enter the values of a,b,c");
+    scanf("%f%f%f",&a,&b,&c);
+    dsc=b*b-(4*a*c);
+    if(dsc<0){
+        printf("number is imaginary");
+
+    }
+    else{
+        root1=(-b+sqrt(dsc))/(2*a);
+        root2=(-b-sqrt(dsc))/(2*b);
+    }
+    printf("roots are %d and %d",root1,root2);
+
+
+}
