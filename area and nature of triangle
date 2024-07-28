@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main(){
+    float a,b,c,area,s;
+    printf("enter the values for sides\n a,b and c");
+    scanf("%f\n%f\n%f",&a,&b,&c);
+    s=a+b+c/2;
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("area is %f",area);
+    if(a==b&&b==c){
+        printf("triangle is equaleteral");
+
+    }
+    else if(a==b||b==c||a==c){
+        printf("triangle is isosceles");
+    }
+    else{
+        printf("triangle is scalene");
+    }
+
+}
